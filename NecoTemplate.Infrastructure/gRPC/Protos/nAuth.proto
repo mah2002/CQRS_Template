@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "NecoTemplate.gRPC";
+
+package nAuth;
+
+// The greeting service definition.
+service authSrv {
+  // Sends a greeting
+  rpc GetAuth (ExampleAuthRequest) returns (ExampleAuthResponse);
+}
+
+// The request message containing the user's name.
+message ExampleAuthRequest {
+  string Id=1;
+  string Name=2;
+}
+
+// The response message containing the greetings.
+message ExampleAuthResponse {
+  bool isAuthenticated=1;
+}

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Dapper" />
+    <PackageReference Include="FluentValidation" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
+	  <PackageReference Include="MediatR" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" />
+	  <PackageReference Include="Serilog" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NecoTemplate.Domain\NecoTemplate.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
